@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Century-Gothic;
+  src: url(/fonts/Century-Gothic/Century-Gothic.ttf);
+}
+@font-face {
+  font-family: Century-Gothic;
+  font-weight: bold;
+  src: url(/fonts/Century-Gothic/Century-Gothic-bold.ttf);
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.753);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-light {
+  background-color: #ffffff !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 24px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #000000;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #000000;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+.navbar .dropdown-menu {
+  background-color: #353535;
+  max-width: 50%;
+}
+.navbar .dropdown-menu .dropdown-item {
+  color: white;
+  background-color: #084c8f00;
+  padding: 0.25rem 0.5rem;
+}
+
+.btn {
+  margin-bottom: 4%;
+}
+.btn a {
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border: 2px solid #ffffff;
+  padding: 8px 16px;
+}
+.btn a:hover {
+  border-color: #727272;
+  color: #727272;
+}
+
+.field-btn:hover, .btn-black a:hover {
+  background-color: #2d2d2d;
+}
+
+.btn-black a {
+  width: 184px;
+  height: 41px;
+  font-family: sans-serif;
+  background-color: #141414;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 12px 36px;
+}
+
+.ps-abs {
+  position: absolute;
+  bottom: 40px;
+  left: 90px;
+}
+
+.btn-grey a {
+  width: 490px;
+  height: 82px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #3b3b3b;
+  font-size: 42px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 12px 36px;
+}
+
+body {
+  padding-top: 82px;
+  background-image: url(/img/bg-10.png);
+  background-size: cover;
+  overflow: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body h1 {
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-weight: lighter;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+body h3 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f8f8f8;
+  text-align: center;
+  font-weight: lighter;
+  margin: 25px 0px 30px 0px;
+}
+body form {
+  width: 820px;
+}
+body form .field {
+  width: 100%;
+  height: 155px;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 16px #000000;
+  border-radius: 12px;
+  padding: 52px 0px 29px 40px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+body form .field label {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body form .field input[type=text] {
+  border-bottom: 2px solid #a8a8a8;
+  width: 70%;
+  font-size: 18px;
+  outline: none;
+  transition: 400ms;
+}
+body form .field input[type=text]:focus {
+  border-bottom: 2px solid #000000;
+}
+body form .field .field1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body form .field .field1 label {
+  margin-left: 16px;
+}
+body form .field .field1 input[type=radio] {
+  width: 39px;
+  height: 39px;
+}
+body form .field .field1 input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+body form .h-427 {
+  height: 427px;
+}
+body form .h-591 {
+  height: 591px;
+}
+body form .pb-75 {
+  padding-bottom: 75px;
+}
+body form h1 {
+  margin: 72px 0px;
+}
+body form .field-btn {
+  width: 100%;
+  height: auto;
+  margin: 50px 0px 100px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body form .field-btn input {
+  width: 422px;
+  height: 82px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 42px;
+  background-color: #3b3b3b;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  body form {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  body h1 {
+    font-size: 34px;
+  }
+  body h3 {
+    font-size: 20px;
+  }
+  body form {
+    width: 360px;
+  }
+  body form .field {
+    padding: 30px 5px 29px 25px;
+  }
+}
+
+/*# sourceMappingURL=style-br.css.map */

@@ -1,0 +1,409 @@
+@import'reset';
+@import 'font';
+@import 'nav';
+@import 'display';
+@import 'bg';
+@import 'btn';
+
+%col {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
+
+%col1 {
+    flex: 1;
+    height: 50%;
+    width: 100%;
+}
+
+%line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+%line1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bg-pg3 {
+    margin-top: 82px;
+    @extend %bg;
+    height: 100vh;
+    background-image: url(../img/bg-img-pg3.jpg);
+    justify-content: flex-start;
+
+    .card-pg3 {
+        width: 50%;
+        height: 80%;
+        padding: 0% 3%;
+
+        .card-pg3-fill {
+            height: 100%;
+            flex: 1;
+            border: 2px solid #ffffff;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            .content {
+                width: 80%;
+                height: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                h2 {
+                    color: #ffffff;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 30pt;
+                    margin-bottom: 16px;
+                }
+
+                h1 {
+                    color: #ffffff;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 46pt;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin-bottom: 24px;
+
+                }
+
+                p {
+                    color: #ffffff;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16pt;
+                    margin-top: -14px;
+                }
+            }
+
+            .line {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 10%;
+                @extend %line;
+
+                .col1 {
+                    @extend %col;
+                    border-right: 2px solid #ffffff;
+                }
+
+                .col2 {
+                    @extend %col;
+                }
+            }
+
+            .line1 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 10%;
+                @extend %line;
+
+                .col1 {
+                    @extend %col;
+                    border-right: 2px solid #ffffff;
+                }
+
+                .col2 {
+                    @extend %col;
+                }
+            }
+
+            .line2 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                top: 0;
+                width: 10%;
+                @extend %line1;
+
+                .col1 {
+                    @extend %col1;
+                    border-bottom: 2px solid #ffffff;
+                }
+
+                .col2 {
+                    @extend %col1;
+                    border-bottom: 2px solid #ffffff;
+                }
+            }
+
+            .line3 {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                top: 0;
+                width: 10%;
+                @extend %line1;
+
+                .col1 {
+                    @extend %col1;
+                    border-bottom: 2px solid #ffffff;
+                }
+
+                .col2 {
+                    @extend %col1;
+                    border-bottom: 2px solid #ffffff;
+                }
+            }
+        }
+    }
+
+    .content-pg3 {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        .part-content {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+
+            .logo-pg-3 {
+                width: 50%;
+                height: 95%;
+                background: url(/img/flambell.png);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .logo-pg-3-1 {
+                width: 50%;
+                height: 95%;
+                background-image: url(/img/poli.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .card-pg-3 {
+                background-color: rgba(0, 0, 0, 0.4);
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 5% 4% 10% 8%;
+                color: #e8e8e8;
+
+                h1 {
+                    font-size: 30px;
+                    font-family: Century-Gothic;
+                    margin-bottom: 24px;
+
+                }
+
+                p {
+                    font-size: 18px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: #acacac;
+                }
+
+                ol {
+                    font-size: 18px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: #acacac;
+                    margin-top: -18px;
+                    list-style-position: inside;
+                }
+
+            }
+        }
+
+    }
+}
+
+%card-3 {
+    width: 100%;
+    height: auto;
+    padding: 0px 8px;
+    margin-top: 5%;
+
+    .card-pg3-fill {
+        height: 300px;
+
+        .content {
+            width: 90%;
+
+            h2 {
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+
+            h1 {
+                font-size: 30px;
+                margin-bottom: 12px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 14px;
+            }
+
+            a {
+                margin-top: 0px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .bg-pg3 {
+        height: 300vh;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        background-position: none;
+
+        .card-pg3 {
+            width: 100%;
+            height: auto;
+            padding: 0px 8px;
+            margin-top: 5%;
+
+            .card-pg3-fill {
+                height: 300px;
+
+                .content {
+                    width: 90%;
+
+                    h2 {
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                    }
+
+                    h1 {
+                        font-size: 30px;
+                        margin-bottom: 12px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        margin-bottom: 14px;
+                    }
+
+                    a {
+                        margin-top: 0px;
+                        margin-bottom: 12px;
+                    }
+                }
+
+                .line {
+                    height: 5%;
+                }
+
+                .line1 {
+                    height: 5%;
+                }
+
+                .line2 {
+                    width: 5%;
+                }
+
+                .line3 {
+                    width: 5%;
+                }
+            }
+        }
+
+        .content-pg3 {
+            width: 100%;
+            height: none;
+
+            .part-content {
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 16px;
+
+                .logo-pg-3 {
+                    width: 90%;
+                    height: 50%;
+
+                }
+
+                .logo-pg-3-1 {
+                    width: 90%;
+                    height: 50%;
+                    background-image: url(/img/poli.jpg);
+                }
+
+                .card-pg-3 {
+                    width: 90%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 901px) and(max-width:1350px) {
+    .bg-pg3 {
+        height: 200vh;
+        justify-content: center;
+        flex-direction: column;
+        background-position: none;
+
+        .card-pg3 {
+            width: 70%;
+            height: 70%;
+            padding: 10% 5% 0% 5%;
+        }
+
+        .content-pg3 {
+            width: 100%;
+
+            .part-content {
+                margin-top: 2%;
+
+                .card-pg-3 {
+                    width: 48%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 577px) and(max-width:900px) {
+    .bg-pg3 {
+        height: 200vh;
+        justify-content: center;
+        flex-direction: column;
+        background-position: none;
+
+        .card-pg3 {
+            width: 80%;
+        }
+
+        .content-pg3 {
+            width: 100%;
+
+            .part-content {
+                margin-top: 2%;
+
+                .card-pg-3 {
+                    width: 48%;
+                }
+            }
+        }
+    }
+}

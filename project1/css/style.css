@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Century-Gothic;
+  src: url(/fonts/Century-Gothic/Century-Gothic.ttf);
+}
+@font-face {
+  font-family: Century-Gothic;
+  font-weight: bold;
+  src: url(/fonts/Century-Gothic/Century-Gothic-bold.ttf);
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.753);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-light {
+  background-color: #ffffff !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 24px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #000000;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #000000;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+.navbar .dropdown-menu {
+  background-color: #353535;
+  max-width: 50%;
+}
+.navbar .dropdown-menu .dropdown-item {
+  color: white;
+  background-color: #084c8f00;
+  padding: 0.25rem 0.5rem;
+}
+
+.btn {
+  margin-bottom: 4%;
+}
+.btn a {
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border: 2px solid #ffffff;
+  padding: 8px 16px;
+}
+.btn a:hover {
+  border-color: #0fb950;
+}
+
+.btn-black a {
+  width: 184px;
+  height: 41px;
+  font-family: sans-serif;
+  background-color: #141414;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 12px 36px;
+}
+.btn-black a:hover {
+  background-color: aqua;
+}
+
+.ps-abs {
+  position: absolute;
+  bottom: 40px;
+  left: 90px;
+}
+
+.btn-grey a {
+  width: 490px;
+  height: 82px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #3b3b3b;
+  font-size: 42px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 12px 36px;
+}
+
+body {
+  padding-top: 82px;
+  height: 100vh;
+  background-image: url(/img/bg.jpg);
+  background-size: cover;
+  overflow: cover;
+  background-position: center;
+  position: relative;
+}
+body .bg-white1 {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.185);
+  z-index: 0;
+}
+body .cnt {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 27%;
+  z-index: 1;
+}
+body .cnt .content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  color: white;
+}
+body .cnt .content .h1 {
+  width: 50%;
+  font-size: 180px;
+  font-family: sans-serif;
+  padding: 0px 30px 0px 0px;
+}
+body .cnt .content .black {
+  text-align: right;
+  color: black;
+}
+body .cnt .content .h3 {
+  width: 50%;
+  font-size: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding: 0px 80px 0px 0px;
+}
+body .cnt .content .padding1 {
+  display: flex;
+  justify-content: flex-end;
+}
+body .cnt .content .padding2 {
+  padding: 0px 0px 0px 30px;
+}
+body .cnt .content .empty {
+  width: 50%;
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/img/bg-ph.jpg);
+  }
+  body .cnt {
+    top: 40%;
+  }
+  body .cnt .content br {
+    display: none;
+  }
+  body .cnt .content .h1 {
+    font-size: 52px;
+    padding: 0px 10px 0px 0px;
+  }
+  body .cnt .content .h3 {
+    font-size: 14px;
+    padding: 0px 0px 0px 30px;
+  }
+  body .cnt .content .padding2 {
+    padding: 0px 0px 0px 10px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 777px) {
+  body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/img/bg-desk.jpg);
+  }
+  body .cnt {
+    top: 40%;
+  }
+  body .cnt .content .h1 {
+    font-size: 110px;
+    padding: 0px 10px 0px 0px;
+  }
+  body .cnt .content br {
+    display: none;
+  }
+  body .cnt .content .h3 {
+    font-size: 21px;
+    padding: 0px 0px 0px 50px;
+  }
+  body .cnt .content .padding2 {
+    padding: 0px 0px 0px 10px;
+  }
+}
+@media only screen and (min-width: 778px) and (max-width: 1241px) {
+  body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/img/bg-desk.jpg);
+  }
+  body .cnt .content .h1 {
+    font-size: 150px;
+    padding: 0px 10px 0px 0px;
+  }
+  body .cnt .content br {
+    display: none;
+  }
+  body .cnt .content .h3 {
+    font-size: 26px;
+    padding: 0px 10px 0px 50px;
+  }
+  body .cnt .content .padding2 {
+    padding: 0px 0px 0px 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

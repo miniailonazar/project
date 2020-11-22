@@ -1,0 +1,37 @@
+@import'reset';
+@import 'font';
+@import 'nav';
+@import 'display';
+@import 'bg';
+@import 'btn';
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .content-pg8 {
+        width: 555px;
+        padding: 40px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-direction: column;
+
+        h1 {
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+
+        }
+
+        p {
+            font-size: 24px;
+            font-family: Century-Gothic;
+            text-align: center;
+            margin: 50px 0px;
+        }
+    }
+}

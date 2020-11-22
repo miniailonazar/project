@@ -1,0 +1,79 @@
+@import'reset';
+@import 'font';
+@import 'nav';
+@import 'display';
+@import 'bg';
+@import 'btn';
+
+body {
+    padding-top: 82px;
+    @extend %bg;
+    height: 100vh;
+    background-image: url(/img/bg-pg5.png);
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .card-pg5 {
+        width: 601px;
+        height: 686px;
+        border: 2px solid #ffffff;
+
+        .content-pg5 {
+            width: 100%;
+            height: 100%;
+            @extend %column-jc-space-around;
+            color: #ffffff;
+            padding: 20px 0px;
+
+            h1 {
+                font-family: Century-Gothic;
+                font-size: 34px;
+                font-weight: lighter;
+
+            }
+
+            .p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                color: #acacac;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .img-pg5 {
+            width: 497px;
+            height: 374px;
+        }
+
+        .img-pg5-1 {
+            width: 323px;
+            height: 420px;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    body {
+
+
+        .card-pg5 {
+            margin: 20px 0px;
+            width: 350px;
+            height: 445px;
+
+            .img-pg5 {
+                width: 266px;
+                height: 200px;
+            }
+
+            .img-pg5-1 {
+                width: 200px;
+                height: 250px;
+            }
+        }
+
+    }
+}

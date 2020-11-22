@@ -1,0 +1,43 @@
+.navbar-light {
+    .navbar-toggler {
+        color: rgba(0, 0, 0, 0.753);
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 24px;
+
+    &:hover {
+        color: #000000;
+    }
+
+    &:focus {
+        color: #000000;
+    }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    padding: 0.25rem 1rem;
+
+    .dropdown-menu {
+        background-color: #353535;
+        max-width: 50%;
+
+        .dropdown-item {
+            color: white;
+            background-color: #084c8f00;
+            padding: 0.25rem 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Century-Gothic;
+  src: url(/fonts/Century-Gothic/Century-Gothic.ttf);
+}
+@font-face {
+  font-family: Century-Gothic;
+  font-weight: bold;
+  src: url(/fonts/Century-Gothic/Century-Gothic-bold.ttf);
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.753);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-light {
+  background-color: #ffffff !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 24px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #000000;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #000000;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  padding: 0.25rem 1rem;
+}
+.navbar .dropdown-menu {
+  background-color: #353535;
+  max-width: 50%;
+}
+.navbar .dropdown-menu .dropdown-item {
+  color: white;
+  background-color: #084c8f00;
+  padding: 0.25rem 0.5rem;
+}
+
+.btn {
+  margin-bottom: 4%;
+}
+.btn a {
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border: 2px solid #ffffff;
+  padding: 8px 16px;
+}
+.btn a:hover {
+  border-color: #727272;
+  color: #727272;
+}
+
+.btn-grey a:hover, .field-btn:hover, .btn-black a:hover {
+  background-color: #2d2d2d;
+}
+
+.btn-black a {
+  width: 184px;
+  height: 41px;
+  font-family: sans-serif;
+  background-color: #141414;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 12px 36px;
+}
+
+.ps-abs {
+  position: absolute;
+  bottom: 40px;
+  left: 90px;
+}
+
+.btn-grey a {
+  width: 490px;
+  height: 82px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #3b3b3b;
+  font-size: 42px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 12px 36px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 64px 40px;
+  padding-top: 146px;
+}
+.cards .card {
+  width: 400px;
+  height: 620px;
+  box-shadow: 4px 4px 4px #b6b6b68e;
+  box-shadow: 4px 4px 24px #b6b6b68e;
+  margin: 0px 20px 32px 20px;
+  padding: 20px 30px 20px 50px;
+  position: relative;
+  transition: 0.3s;
+}
+.cards .card h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.cards .card .with {
+  margin-bottom: 8px;
+}
+.cards .card h3 {
+  font-size: 16px;
+  color: #918f8f;
+  font-family: Century-Gothic;
+  margin-bottom: 60px;
+}
+.cards .card .cnt {
+  font-family: Century-Gothic;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.cards .card .mg-16 {
+  margin-bottom: 16px;
+}
+.cards .card .plus {
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+.cards .card .ex {
+  margin-bottom: 8px;
+}
+.cards .card .ex p {
+  font-family: Century-Gothic;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.cards .card .ad {
+  font-weight: bold;
+}
+.cards .card .st {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.cards .card .add {
+  margin-bottom: 60px;
+}
+.cards .card .price h1 {
+  font-size: 38px;
+}
+.cards .card .inline {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.cards .card .inline h3 {
+  padding: 8px 8px;
+  margin-bottom: 0px;
+}
+.cards .card .white {
+  color: #d6d6d6;
+}
+.cards .card:hover {
+  transform: scale(1.1);
+}
+.cards .ligth {
+  background-color: #f5f5f5;
+  color: #000000;
+}
+.cards .dark {
+  background-color: #7d7d7d;
+  color: #ffffff;
+}
+.cards .foot {
+  margin-top: 20px;
+}
+.cards .foot p {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 576px) {
+  .cards {
+    padding: 64px 0px;
+  }
+  .cards .card {
+    width: 360px;
+    height: 600px;
+    margin: 0px 0px 32px 0px;
+    padding: 20px 30px 20px 40px;
+  }
+  .cards .card h1 {
+    font-size: 34px;
+    margin-bottom: 16px;
+  }
+  .cards .card h3 {
+    font-size: 16px;
+    margin-bottom: 45px;
+  }
+  .cards .card .plus {
+    margin-bottom: 45px;
+  }
+  .cards .card .add {
+    margin-bottom: 45px;
+  }
+  .cards .foot {
+    padding: 10px;
+  }
+  .cards .foot p {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=style-pg6.css.map */

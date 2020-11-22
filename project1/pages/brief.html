@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style-br.css">
+    <title>hw_4</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="logo"><img src="../img/lg.png" alt=""></div>
+        <div class="burger">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Главная <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/about-me.html">Обо мне</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/project-1.html">Проекты №1</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Другое
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../pages/project-2.html">Проекты №2</a>
+                <a class="dropdown-item" href="../pages/project-3.html">Проекты №3</a>
+                <a class="dropdown-item" href="../pages/price.html">Прайсы</a>
+                <a class="dropdown-item" href="../pages/order.html">Заказать дизайн</a>
+                <a class="dropdown-item" href="/pages/blog-1.html">Блог №1</a>
+                <a class="dropdown-item" href="/pages/blog-2.html">Блог №2</a>
+                <a class="dropdown-item" href="../pages/brief.html">Бриф</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <h1>Заполнить бриф</h1>
+    <h3>Заполните бриф для обратной связи</h3>
+    <form action="https://24navo.com/2/t/b0.php" method="POST" target="_blank">
+        <div class="field">
+            <label for="username">Ваши ФИО</label>
+            <input type="text" name="username" id="username">
+        </div>
+        <div class="field">
+            <label for="contacts">Контактные данные для связи (почта/номер телефона/мессенджер)</label>
+            <input type="text" name="contacts" id="contacts">
+        </div>
+        <div class="field">
+            <label for="product">Название продукта/бренда/услуги?</label>
+            <input type="text" name="product" id="product">
+        </div>
+        <div class="field">
+            <label for="bis">Суть вашего бизнеса?</label>
+            <input type="text" name="bis" id="bis">
+        </div>
+        <div class="field">
+            <label for="gen">На какую целевую аудиторию вы ориентируетесь? (пол,возраст и тд)</label>
+            <input type="text" name="gen" id="gen">
+        </div>
+        <div class="field h-427 pb-75">
+            <label>Ценовой диапазон товара/услуги?</label>
+            <div class="field1">
+                <input type="radio" name="price" id="price" value="before 3000">
+                <label for="price">до 3000</label>
+            </div>
+            <div class="field1">
+                <input type="radio" name="price" id="price1" value="before 10 000">
+                <label for="price1">до 10 000</label>
+            </div>
+            <div class="field1">
+                <input type="radio" name="price" id="price2" value="after 10 000">
+                <label for="price2">более 10 000</label>
+            </div>
+        </div>
+        <!-- radio -->
+        <div class="field">
+            <label for="adven">Преимущества компании/товара?</label>
+            <input type="text" name="adven" id="adven">
+        </div>
+        <div class="field">
+            <label for="competitors">Есть ли у вас конкуренты? Назовите их.</label>
+            <input type="text" name="competitors" id="competitors">
+        </div>
+        <div class="field h-591 pb-75">
+            
+            <label>Каким вы хотите видеть ваш будущий дизайн?</label>
+            <div class="field1">
+                <input type="checkbox" name="device"id="checkbox1">
+                <label for="checkbox1">Минимализм</label>
+            </div>
+            <div class="field1">
+                <input type="checkbox" name="device" id="checkbox">
+                <label for="checkbox">Хайтек</label>
+            </div>
+            <div class="field1">
+                <input type="checkbox" name="device" id="checkbox2">
+                <label for="checkbox2">Современный</label>
+            </div>
+            <div class="field1">
+                <input type="checkbox" name="device" id="checkbox3">
+                <label for="checkbox3">Практичный</label>
+            </div>
+            <div class="field1">
+                <input type="checkbox" name="device" id="checkbox4">
+                <label for="checkbox4">Яркий</label>
+            </div>
+            <div class="field1">
+                <input type="checkbox" name="device" id="checkbox5">
+                <label for="checkbox5">Активный</label>
+            </div>
+            <div class="field1">
+                <input type="checkbox" name="device" id="checkbox6">
+                <label for="checkbox6">Сдержаный</label>
+            </div>
+        </div>
+        <!-- checkbox -->
+        <div class="field">
+            <label for="logo">Где будет использоваться ваш логотип? (сайт, соц.сети, полиграфия, реклама)</label>
+            <input type="text" name="logo" id="logo">
+        </div>
+        <div class="field">
+            <label for="lan">Языковые версии логотипа?</label>
+            <input type="text" name="lan" id="lan">
+        </div>
+        <div class="field">
+            <label for="ass">Какие ассоциации должен вызывать логотип?</label>
+            <input type="text" name="ass" id="ass">
+        </div>
+        <div class="field">
+            <label for="det">Должна ли присутствовать обязательная деталь в дизайне? Какая?</label>
+            <input type="text" name="det" id="det">
+        </div>
+        <div class="field">
+            <label for="no">Чего категорически быть не должно?</label>
+            <input type="text" name="no" id="no">
+        </div>
+        <div class="field">
+            <label for="color">Есть ли предпочтения на счет цветовой гаммы?</label>
+            <input type="text" name="color" id="color">
+        </div>
+        <h1>Фирменный стиль</h1>
+        <div class="field">
+            <label for="f-el">Какие элементы фирменного стиля требуются?</label>
+            <input type="text" name="f-el" id="f-el">
+        </div>
+        <div class="field">
+            <label for="f-col">Какими должны быть фирменные цвета?</label>
+            <input type="text" name="f-col" id="f-col">
+        </div>
+        <div class="field">
+            <label for="f-ch">Напишите технические характеристики фирменных носителей.</label>
+            <input type="text" name="f-ch" id="f-ch">
+        </div>
+        <div class="field">
+            <label for="des">Есть ли у вас примеры понравившихся дизайнов? Опишите.</label>
+            <input type="text" name="des" id="des">
+        </div>
+        <h1>Редизайн</h1>
+        <div class="field">
+            <label for="y-des">Почему вы хотите изменить ваш дизайн?</label>
+            <input type="text" name="y-des" id="y-des">
+        </div>
+        <div class="field">
+            <label for="ch">Что именно вы бы хотели изменить?</label>
+            <input type="text" name="ch" id="ch">
+        </div>
+        <div class="field-btn">
+            <input type="submit" id="submit" name="submit" value="Отправить">
+        </div>
+    </form>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

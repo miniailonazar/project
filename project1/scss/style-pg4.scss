@@ -1,0 +1,182 @@
+@import 'style-pg3';
+
+%flex-column-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.bg-pg3 {
+    padding-top: 82px;
+    height: 110vh;
+    background-image: url(/img/bg-pg4.jpg);
+
+
+    .content-pg3 {
+        .part-content {
+            .logo-pg-3 {
+                width: 50%;
+                height: 95%;
+                background: url(/img/logo-brendbook.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .logo-pg-3-1 {
+                background-image: url(/img/business-card.jpg);
+            }
+
+            .card-pg-3 {
+                padding: 3% 4% 10% 5%;
+
+                h1 {
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                ol {
+                    margin-top: -14px;
+                }
+
+            }
+        }
+
+    }
+
+    .card-pg4 {
+        height: 98%;
+        width: 44%;
+        border: 2px solid #ffffff;
+        margin-left: 3%;
+        padding: 0% 5%;
+        @extend %flex-column-center;
+
+        .header {
+            height: 40%;
+            width: 100%;
+            color: #ffffff;
+            @extend %flex-column-center;
+            justify-content: space-around;
+
+            h1 {
+                font-size: 48px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+
+            }
+
+            h2 {
+                font-size: 36px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 6%;
+            }
+
+        }
+
+        .slider {
+            height: 60%;
+            width: auto;
+            @extend %flex-column-center;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .bg-pg3 {
+        height: 350vh;
+        width: 100%;
+
+        .card-pg3 {
+            width: 100%;
+            height: auto;
+            padding: 0px 8px;
+            margin-top: 5%;
+
+            .card-pg3-fill {
+                height: 300px;
+
+                .content {
+                    width: 90%;
+
+                    h2 {
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                    }
+
+                    h1 {
+                        font-size: 30px;
+                        margin-bottom: 12px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        margin-bottom: 14px;
+                    }
+
+                    a {
+                        margin-top: 0px;
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+
+        .content-pg3 {
+            width: 100%;
+            height: none;
+
+            .part-content {
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 16px;
+
+                .logo-pg-3 {
+                    width: 90%;
+                    height: 50%;
+
+                }
+
+                .logo-pg-3-1 {
+                    width: 90%;
+                    height: 50%;
+                }
+
+                .card-pg-3 {
+                    width: 90%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 901px) and(max-width:1350px) {
+    .bg-pg3 {
+        height: 220vh;
+
+        .card-pg4 {
+            width: 70%;
+            height: 70%;
+            padding: 0% 5% 5% 5%;
+        }
+    }
+}
+
+@media only screen and (min-width: 577px) and(max-width:900px) {
+    .bg-pg3 {
+        height: 200vh;
+
+        .card-pg4 {
+            width: 80%;
+        }
+
+    }
+}
